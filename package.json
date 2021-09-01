@@ -1,0 +1,28 @@
+{
+  "name": "ruid-online",
+  "version": "1.0.0",
+  "description": "ruid online",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deadreyo/RUID-Hall-Of-Fame.git"
+  },
+  "author": "NightKnight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deadreyo/RUID-Hall-Of-Fame/issues"
+  },
+  "homepage": "https://github.com/Deadreyo/RUID-Hall-Of-Fame#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "4": "0.0.0",
+    "font-awesome": "^4.7.0"
+  }
+}
