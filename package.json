@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ruid online",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server"
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "4": "0.0.0",
+    "file-saver": "^2.0.5",
     "font-awesome": "^4.7.0"
   }
 }

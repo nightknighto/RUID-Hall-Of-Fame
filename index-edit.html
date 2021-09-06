@@ -1,0 +1,40 @@
+<script>var exports = {};</script>
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/position.css">
+        <link rel="stylesheet" href="css/highlight.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div id="main">
+            <div class="modal fade" id="HallOfFame" tabindex="-1" aria-labelledby="HallOfFame" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                            <h4 class="modal-title">Hall of Fame</h4>
+                            <a class="btn btn-danger" style="margin-left: 2%;" target="_blank">SUBMISSIONS</a>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid" id="insert">
+                                
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <script src="bootstrap.bundle.min.js"></script>
+        <script>
+            var myModal = new bootstrap.Modal(document.getElementById('HallOfFame'))
+            myModal.show()
+        </script>
+        <script type="module" src="index.js"></script>
+
+    </body>
+
+</html>
