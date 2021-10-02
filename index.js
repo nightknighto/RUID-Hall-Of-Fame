@@ -1,13 +1,22 @@
 
 import * as FileSaver from "./node_modules/file-saver/dist/FileSaver.min.js";
 
-
 const data = [
+    {
+        title: "Duck Hunt Minigame",
+        author: "NightKnight",
+        description: "(Typescript) The Duck Hunt minigame made in wc3 using RUID and coded in typescript.",
+        link: "https://live.staticflickr.com/65535/51543573995_8e2dd7d8a6_o.gif",
+        type: 'img',
+        projectName: "Fantasy Life",
+        projectLink: ""
+    },
     {
         title: "Equipment & Inventory System",
         author: "NightKnight & FeelsGoodMan",
         description: "(GUI-Typescript) Equipment system that supports item types and stats, and works with GUI",
         link: "https://www.youtube.com/embed/gXFsS9zhRG0",
+        type: 'iframe',
         projectName: "Acolyte of Life",
         projectLink: "https://www.hiveworkshop.com/threads/acolyte-of-life.330425/"
     },
@@ -16,6 +25,7 @@ const data = [
         author: "FeelsGoodMan",
         description: "(GUI) System that enables the user to open locks using numbers.",
         link: "https://www.youtube.com/embed/McoJY_Z882A",
+        type: 'iframe',
         projectName: "Acolyte of Life",
         projectLink: "https://www.hiveworkshop.com/threads/acolyte-of-life.330425/"
     },
@@ -24,6 +34,7 @@ const data = [
         author: "NightKnight",
         description: "(Typescript) A fully-functional system that enables the user to buy, sell or exchange items.",
         link: "https://www.youtube.com/embed/Ov8FzFXnjAY",
+        type: 'iframe',
         projectName: "Acolyte of Life",
         projectLink: "https://www.hiveworkshop.com/threads/acolyte-of-life.330425/"
     },
@@ -32,6 +43,7 @@ const data = [
         author: "FeelsGoodMan",
         description: "(GUI) An interface that displays quests, along with their descriptions.",
         link: "https://www.youtube.com/embed/zaIxuHGEtHc",
+        type: 'iframe',
         projectName: "Acolyte of Life",
         projectLink: "https://www.hiveworkshop.com/threads/acolyte-of-life.330425/"
     },
@@ -40,6 +52,7 @@ const data = [
         author: "FeelsGoodMan",
         description: "(GUI) Interface designed to edit the formattion of the team.",
         link: "https://www.youtube.com/embed/lN9fAUHVFaI",
+        type: 'iframe',
         projectName: "Acolyte of Life",
         projectLink: "https://www.hiveworkshop.com/threads/acolyte-of-life.330425/"
     },
@@ -67,9 +80,14 @@ document.onreadystatechange = () => {
             card.classList = "card border border-dark border-3"+bg
                 let ratio = card.appendChild(document.createElement('div'))
                 ratio.classList = "ratio ratio-1x1"
-                    let iframe = ratio.appendChild(document.createElement('iframe'))
-                    iframe.src = data[i].link
-                    iframe.allowFullscreen = true;
+                    if(data[i].type == 'iframe') {
+                        let iframe = ratio.appendChild(document.createElement('iframe'))
+                        iframe.src = data[i].link
+                        iframe.allowFullscreen = true;
+                    } else if(data[i].type == 'img') {
+                        let img = ratio.appendChild(document.createElement('img'))
+                        img.src = data[i].link
+                    }
                 let cardbody = card.appendChild(document.createElement('div')); cardbody.classList = "card-body"
                     let title = cardbody.appendChild(document.createElement('h3'))
                     title.classList = "card-title"; title.innerText = data[i].title
