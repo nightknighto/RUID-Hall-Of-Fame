@@ -103,7 +103,7 @@ document.onreadystatechange = () => {
     }
 
     let str = document.getElementById('main').innerHTML
-    let file = new File([str], "index-prod.html", {type: "text/plain;charset=utf-8"});
+    let file = new File([str], "index.html", {type: "text/plain;charset=utf-8"});
     
     // saveAs(file)
 }
