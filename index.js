@@ -3,10 +3,19 @@ import * as FileSaver from "./node_modules/file-saver/dist/FileSaver.min.js";
 
 const data = [
     {
+        title: "Burger Shop",
+        author: "NightKnight",
+        description: "(Typescript) Make the wanted sandwitch recipe by pressing the buttons to drop the ingredients.",
+        link: "https://live.staticflickr.com/65535/51571081985_a65684a52e_o.gif",
+        type: 'img',
+        projectName: "Fantasy Life",
+        projectLink: ""
+    },
+    {
         title: "Duck Hunt Minigame",
         author: "NightKnight",
         description: "(Typescript) The Duck Hunt minigame made in wc3 using RUID and coded in typescript.",
-        link: "https://live.staticflickr.com/65535/51543573995_8e2dd7d8a6_o.gif",
+        link: "https://www.hiveworkshop.com/attachments/51542367827_f39d6c266c_o-gif.388058/",
         type: 'img',
         projectName: "Fantasy Life",
         projectLink: ""
