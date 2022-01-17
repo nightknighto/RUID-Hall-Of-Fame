@@ -3,6 +3,15 @@ import * as FileSaver from "./node_modules/file-saver/dist/FileSaver.min.js";
 
 const data = [
     {
+        title: "Bestiary",
+        author: "FeelsGoodMan",
+        description: "(GUI/LUA) View details and stats of monsters & creatures.",
+        link: "https://www.youtube.com/embed/kG60-OLZjYs",
+        type: 'iframe',
+        projectName: "Acolyte of Life",
+        projectLink: "https://www.hiveworkshop.com/threads/acolyte-of-life.330425/"
+    },
+    {
         title: "Burger Shop",
         author: "NightKnight",
         description: "(Typescript) Make the wanted sandwitch recipe by pressing the buttons to drop the ingredients.",
